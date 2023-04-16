@@ -25,12 +25,13 @@ Remaining lines come from user configuration or are default values.
 ```
 {
 	"uuid": "a495bb50c5b14b44b5121370f02d74de",
-	"major": 332,**
-	"minor": 10121,**
-	"tx_power": 90,**
-	"rssi": -28,**
+	"major": 332,
+	"minor": 10121,
+	"tx_power": 90,
+	"rssi": -28,
 	"mac": "f9:15:82:6f:de:27",
 	"Color": "ORANGE:f9:15:82:6f:de:27",
+	
 	(user config data below)
 	"Beer": ["Kegerator Temperature", "84884"],
 	"actualSGPoints":"1.0000,1.0125,1.0642,1.1200",
@@ -41,10 +42,12 @@ Remaining lines come from user configuration or are default values.
 	"timeStamp": 1681677716355,
 	"formatteddate": "4/16/2023, 13:41:56",
 	"Timepoint": 45032.57079114584,
+	
 	(calculated data)
 	"SG": 1.0121,
 	"hd": true,
 	"Temp": "33.2",
+	
 	(additional user config data)
 	"tempunits": "°F",
 	"fermunits": "",
