@@ -22,7 +22,7 @@ Tilt object (JSON)
 First 6 lines are from iBeacon scan
 Remaining lines come from user configuration or are default values.
 Color key:
-
+```
 {
 "RED" : "a495bb10c5b14b44b5121370f02d74de"
 "GREEN" : "a495bb20c5b14b44b5121370f02d74de"
@@ -33,7 +33,7 @@ Color key:
 "YELLOW" : "a495bb70c5b14b44b5121370f02d74de"
 "PINK" : "a495bb80c5b14b44b5121370f02d74de"
 }
-
+```
 
 ```
 {
