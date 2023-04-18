@@ -21,6 +21,7 @@ Tilt object (JSON)
 
 First 6 lines are from iBeacon scan
 Remaining lines come from user configuration or are default values.
+
 Color key:
 ```
 {
@@ -46,29 +47,30 @@ Color key:
 	"Color": "ORANGE:f9:15:82:6f:de:27",
 	
 	(user config data below)
-	"Beer": ["Kegerator Temperature", "84884"],
+	"Beer": ["Untitled", ""], //use as default value
 	"actualSGPoints":"1.0000,1.0125,1.0642,1.1200",
 	"unCalSGPoints":"0.9980,1.0121,1.0653,1.1171",
 	"actualTempPoints": "31.5,67.1",
 	"unCalTempPoints": "32.0,68.3",
+	
 	(NTP time server data below)
 	"timeStamp": 1681677716355,
 	"formatteddate": "4/16/2023, 13:41:56",
 	"Timepoint": 45032.57079114584,
 	
-	(calculated data)
+	(calculated data from major and minor ble scan)
 	"SG": 1.0121,
 	"hd": true,
-	"Temp": "33.2",
+	"Temp": 33.2,
 	
 	(additional user config data)
-	"tempunits": "°F",
-	"fermunits": "",
+	"tempunits": "°F", //use as default value
+	"fermunits": "", //use as default value
 	"customcloudURL": "https://script.google.com/macros/s/AKfycbwNXh6rEWoULd0vxWxDylG_PJwQwe0dn5hdtSkuC4k3D9AXBSA/exec",
-	"defaultcloudURL": ["https://script.google.com/macros/s/AKfycbwNXh6rEWoULd0vxWxDylG_PJwQwe0dn5hdtSkuC4k3D9AXBSA/exec", false],
-	"logCloudDataCheck": true,
-	"logLocalDataCheck": true,
-	"localloggingInterval": 38.6,
-	"loggingInterval": 30
+	"defaultcloudURL": ["https://script.google.com/macros/s/AKfycbwNXh6rEWoULd0vxWxDylG_PJwQwe0dn5hdtSkuC4k3D9AXBSA/exec", true], //use as default value
+	"logCloudDataCheck": true, //use as default value
+	"logLocalDataCheck": true, //use as default value
+	"localloggingInterval": 15, //use as default value
+	"loggingInterval": 15 //use as default value
 }
 ```
