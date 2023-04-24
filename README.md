@@ -74,3 +74,14 @@ Color key:
 	"loggingInterval": 15 //use as default value
 }
 ```
+
+Example of sending HTTP POST to Google Sheets:
+
+```
+content-type: "application/x-www-form-urlencoded; charset=utf-8"
+
+"Timepoint=43331.79300001158&Temp=65.0&SG=1.01&Beer=Munich%20Lager%20#1&Color=PINK&Comment="
+
+```
+
+Timepoint is an Excel/Google Sheets decimal format for the logging device’s local time which is calculated from JavaScript time and includes the time zone offset in the calculation. Temp is in degrees F and SG is specific gravity (at 60 F/15.6 C). Beer is the beer name, Color is the Tilt color, Comment is usually blank but can be used to add comments to specific logging points as well as start new logs and send email alerts.
