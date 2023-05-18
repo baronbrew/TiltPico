@@ -7,8 +7,8 @@
 #include <StreamString.h>
 
 #ifndef STASSID
-#define STASSID "cameowifi"
-#define STAPSK "jalabean"
+#define STASSID "Meera's"
+#define STAPSK "9867504123*fir"
 #endif
 
 const char *ssid = STASSID;
@@ -141,7 +141,7 @@ void setup(void) {
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
 
-  if (MDNS.begin("tiltpico-01")) {
+  if (MDNS.begin("tiltpico")) {
     Serial.println("MDNS responder started");
   }
 
