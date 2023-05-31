@@ -56,10 +56,11 @@ Color key:
 	"customCloudURL1": "https://example2.com",
 	"customCloudURL2": "https://example2.com",
 	"loggingInterval": "15",
-	"Timepoint": 45032.57079114584,
+	"Timepoint": "45032.57079114584",
 	"SG": "1.012",
 	"hd": "false",
-	"Temp": "33",
+	"Temp": "33"
+}
 ```
 
 Example of sending HTTP POST to Google Sheets:
