@@ -14,7 +14,7 @@ Note: The Tilt Pico will use mDNS to assist with finding the Tilt Pico on the ne
 
 Note: Since the Tilt 2 app can't scan for mac address, (iOS and library limitation), the Tilt Pico will default to the closes Tilt with specified UUID/color.
 
-Set configuration example: http://tiltpico:1880/set?mac=closest&color=ORANGE&Beer=Kegerator%20Temperature%2C84884&actualSGPoints=1.0000%2C1.0125%2C1.0642%2C1.1200&unCalSGPoints=0.9980%2C1.0121%2C1.0653%2C1.1171&actualTempPoints=31.5%2C67.1&unCalTempPoints=32.0%2C68.3&Timepoint=45032.57079114584&timeStamp=1681677716355&tempunits=%C2%B0F&fermunits=
+Set configuration example: `http://tiltpico.local/set?Color=ORANGE:F6:BD:D3:46:3A:05&Beer=Untitled&unCalSGPoints=-0.001,1.000,1.009,1.063,10.000&actualSGPoints=-0.001,1.000,1.0120,1.0800,10.000&unCalTempPoints=-1000,1000&actualTempPoints=-1000,1000&defaultcloudURL=https://script.google.com/a/baronbrew.com/macros/s/AKfycbydNOcB-_3RB3c-7sOTI-ZhTnN43Ye1tt0EFvvMxTxjdbheaw/exec&customCloudURL1=https://example1.com&customCloudURL2=https://example2.com&loggingInterval=15`
 
 
 Tilt object (JSON)
@@ -39,40 +39,27 @@ Color key:
 ```
 {
 	"uuid": "a495bb50c5b14b44b5121370f02d74de",
-	"major": 332,
-	"minor": 10121,
+	"major": 33,
+	"minor": 1012,
 	"tx_power": 90,
 	"rssi": -28,
 	"mac": "f9:15:82:6f:de:27",
 	"Color": "ORANGE:f9:15:82:6f:de:27",
 	
 	(user config data below)
-	"Beer": ["Untitled", ""], //use as default value
+	"Beer": "Untitled,123456",
 	"actualSGPoints":"1.0000,1.0125,1.0642,1.1200",
-	"unCalSGPoints":"0.9980,1.0121,1.0653,1.1171",
-	"actualTempPoints": "31.5,67.1",
-	"unCalTempPoints": "32.0,68.3",
-	
-	(NTP time server data below)
-	"timeStamp": 1681677716355,
-	"formatteddate": "4/16/2023, 13:41:56",
+	"unCalSGPoints":"-0.001,1.000,1.0120,1.0800,10.000",
+	"actualTempPoints": "-1000,1000",
+	"unCalTempPoints": "-1000,1000",
+	"defaultcloudURL": "https://script.google.com/a/baronbrew.com/macros/s/AKfycbydNOcB-_3RB3c-7sOTI-ZhTnN43Ye1tt0EFvvMxTxjdbheaw/exec",
+	"customCloudURL1": "https://example2.com",
+	"customCloudURL2": "https://example2.com",
+	"loggingInterval": "15",
 	"Timepoint": 45032.57079114584,
-	
-	(calculated data from major and minor ble scan)
-	"SG": 1.0121,
-	"hd": true,
-	"Temp": 33.2,
-	
-	(additional user config data)
-	"tempunits": "°F", //use as default value
-	"fermunits": "", //use as default value
-	"customcloudURL": "https://script.google.com/macros/s/AKfycbwNXh6rEWoULd0vxWxDylG_PJwQwe0dn5hdtSkuC4k3D9AXBSA/exec",
-	"defaultcloudURL": ["https://script.google.com/macros/s/AKfycbwNXh6rEWoULd0vxWxDylG_PJwQwe0dn5hdtSkuC4k3D9AXBSA/exec", true], //use as default value
-	"logCloudDataCheck": true, //use as default value
-	"logLocalDataCheck": true, //use as default value
-	"localloggingInterval": 15, //use as default value
-	"loggingInterval": 15 //use as default value
-}
+	"SG": "1.012",
+	"hd": "false",
+	"Temp": "33",
 ```
 
 Example of sending HTTP POST to Google Sheets:
